@@ -1,0 +1,37 @@
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+ 
+/*body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('src/images/default-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+*/
+
+#clock {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para el texto */
+    padding: 0; /* Elimina el relleno */
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('src/fonts/Montserrat-Bold.ttf') format('truetype'); /* Asegúrate de que la ruta sea correcta */
+    font-weight: bold;
+    font-style: normal;
+}
+
