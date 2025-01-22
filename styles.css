@@ -5,17 +5,11 @@ html, body {
     height: 100%;
     width: 100%;
 }
- 
-/*body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('src/images/default-background.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color: white;
+
+body{
+    display: flex;
+    align-items: center;
 }
-*/
 
 #clock {
     position: absolute;
@@ -24,8 +18,8 @@ html, body {
     font-size: 2.5rem;
     font-family: 'Montserrat', Arial, sans-serif;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para el texto */
-    padding: 0; /* Elimina el relleno */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+    padding: 0; 
 }
 
 @font-face {
@@ -35,3 +29,88 @@ html, body {
     font-style: normal;
 }
 
+.sidebar{
+    background-color:white;
+    width: max-content;
+    border-radius: 0px 10px 10px 0px;
+    padding: 2rem 1rem;
+}
+
+.sidebar:hover .sidebar__element{
+    grid-template-columns: 40px 1fr;
+}
+
+.sidebar__list{
+    list-style: none;
+    padding: 0;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.sidebar__element{
+    padding: .8rem 1.3rem;
+    border-radius: 15px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 0fr;
+    color: #526581;
+    fill: #8491a5;
+    transition: grid-template-columns .4s;
+}
+
+.sidebar__element:not(:has(.sidebar__icon--logo)):hover{
+    background-color: #007aff;
+    color: white;
+    fill: white;
+    cursor: pointer;
+}
+
+.sidebar__element:has(.sidebar__icon--logo){
+    margin-bottom: 1rem;
+}
+
+.sidebar__icon{
+    width: 100%;
+    overflow: hidden;
+    justify-self: center;
+}
+
+.sidebar__icon--logo{
+     max-width: 40px;
+}
+
+.sidebar__logo{
+    max-width: 75px;
+    text-wrap: nowrap;
+    margin-left: .1rem;
+}
+
+.sidebar__text{
+    font-family: Poppins;
+    text-wrap: nowrap;
+}
+
+.sidebar__logo, .sidebar__text{
+    padding-left: 1.3rem;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('src/fonts/Poppins/Poppins-Medium.ttf') format('truetype'); /* Asegúrate de que la ruta sea correcta */
+    font-weight: normal;
+    font-style: normal;
+}
+
+.sidebar__hide{
+    overflow: hidden;
+}
+
+.sidebar__element--out{
+    margin-top: auto;
+}
+
+a{
+    text-decoration: none;
+}

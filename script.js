@@ -5,6 +5,7 @@ function updateClock() {
     // Formatea la hora, minutos y segundos
     const hours = String(now.getHours()).padStart(2, '0');
     const minutes = String(now.getMinutes()).padStart(2, '0');
+    //const seconds = String(now.getSeconds()).padStart(2, '0');
 
     // Actualiza el contenido del reloj
     clockElement.textContent = `${hours}:${minutes}`;
