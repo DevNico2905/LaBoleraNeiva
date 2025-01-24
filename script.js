@@ -17,3 +17,6 @@ setInterval(updateClock, 1000);
 // Llama una vez al cargar para mostrar la hora de inmediato
 updateClock();
 
+function showNewGameModal() {
+    
+}

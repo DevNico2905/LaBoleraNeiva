@@ -114,3 +114,28 @@ body{
 a{
     text-decoration: none;
 }
+
+.NewGameModal{
+    background-color: blue;
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2.5%;
+    /*display: none;*/
+}
+
+.selecciona-players{
+    height: 20%;
+    background-color: #fff;
+}
+ 
+.name-player{
+    height: 70%;
+    background-color: #f1c7c7;
+}
+
+.botones-modal{
+    height: 10%;
+    background-color: #a98c8c; 
+}
