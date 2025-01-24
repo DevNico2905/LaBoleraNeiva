@@ -31,7 +31,7 @@
             </li>
 
             <!--Juego Nuevo-->
-            <a href="#"><li class="sidebar__element">
+            <li class="sidebar__element" onclick="showNewGameModal()">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     class="sidebar__icon">
                     <path
@@ -45,7 +45,7 @@
                 <div class="sidebar__hide">
                     <p class="sidebar__text">Nuevo Juego</p>
                 </div>
-            </li></a>
+            </li>
 
             <!--Jugadores-->
             <li class="sidebar__element">
@@ -102,7 +102,7 @@
         </ul>
     </aside>
 
-    <div class="NewGameModal id="NewGameModal">
+    <div class="NewGameModal" id="modalplayers">
         <div class="selecciona-players divs-modal"></div>
         <div class="name-player divs-modal"></div>
         <div class="botones-modal divs-modal"></div>
