@@ -116,11 +116,11 @@ a{
 }
 
 .NewGameModal{
-    background-color: blue;
+    background-color: #e5e9ef;
     width: 60%;
     height: 600px;
     margin: auto;
-    padding: 10px;
+    padding: 10px; 
     border-radius: 2.5%;
     display: none;
 }
@@ -132,10 +132,47 @@ a{
  
 .name-player{
     height: 70%;
-    background-color: #f1c7c7;
+    background-color: #e5e9ef;
 }
 
 .botones-modal{
     height: 10%;
-    background-color: #a98c8c; 
+    background-color: #e5e9ef;
+    display: flex;
+    align-items: center;
+}
+
+.modal-buttons{
+    background-color:white;
+    /*padding: 5px 10px;*/
+    height: 40px;
+    width: 100px;
+    /*border-color: grey;*/
+    border-width: 0px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #526581;
+}
+
+.cancel{
+    margin-left: 40px;
+}
+
+.aplied{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.modal-buttons:hover {
+    background-color: #007aff;
+    color: white;
+    fill: white;
+    cursor: pointer;
+    border-width: 0px;
 }

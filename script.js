@@ -22,3 +22,8 @@ function showNewGameModal() {
     document.getElementById("modalplayers").style.display="block";
     console.log("Modal Shown");
 }
+
+function hideNewGameModal() {
+    document.getElementById("modalplayers").style.display="none";
+    console.log("Modal Hidden");
+}
