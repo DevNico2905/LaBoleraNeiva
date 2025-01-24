@@ -17,7 +17,7 @@ setInterval(updateClock, 1000);
 // Llama una vez al cargar para mostrar la hora de inmediato
 updateClock();
 
-
+/*
 function showNewGameModal() {
     document.getElementById("modalplayers").style.display="block";
     console.log("Modal Shown");
@@ -26,4 +26,20 @@ function showNewGameModal() {
 function hideNewGameModal() {
     document.getElementById("modalplayers").style.display="none";
     console.log("Modal Hidden");
+}*/
+
+function showNewGameModal() {
+    const modal = document.getElementById('modalplayers');
+    modal.style.display = 'block';
+    setTimeout(() => {
+        modal.classList.add('show');
+    }, 10);
+}
+
+function hideNewGameModal() {
+    const modal = document.getElementById('modalplayers');
+    modal.classList.remove('show');
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 300);
 }

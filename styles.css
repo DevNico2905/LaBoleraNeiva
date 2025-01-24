@@ -115,6 +115,7 @@ a{
     text-decoration: none;
 }
 
+/*
 .NewGameModal{
     background-color: #e5e9ef;
     width: 60%;
@@ -123,7 +124,7 @@ a{
     padding: 10px; 
     border-radius: 2.5%;
     display: none;
-}
+}*/
 
 .selecciona-players{
     height: 20%;
@@ -175,4 +176,25 @@ a{
     fill: white;
     cursor: pointer;
     border-width: 0px;
+}
+
+/**/
+
+.NewGameModal {
+    background-color: #e5e9ef;
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    padding: 10px; 
+    border-radius: 2.5%;
+    max-height: 600px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    
+}
+
+.NewGameModal.show {
+    opacity: 1;
+    pointer-events: all;
 }
