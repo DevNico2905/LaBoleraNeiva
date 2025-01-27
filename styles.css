@@ -259,4 +259,28 @@ a{
     border-width: 0.5px;
     border-radius: 15px;
     margin: 7.5px 0px 7.5px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
+
+.input-names{
+    width: 90%;
+    height: 85%;
+    padding: 0;
+    font-family: 'Poppins';
+    font-size: 2rem;
+    color: #526581;
+    
+}
+
+.input-names {
+    border: none; /* Elimina el borde por defecto */
+    outline: none; /* Elimina el borde de enfoque */
+  }
+  
+  .input-names:hover,
+  .input-names:focus {
+    border: none; /* Asegura que no aparezca borde al hacer hover o al enfocar */
+    outline: none; /* También elimina el borde al enfocar */
+  }
