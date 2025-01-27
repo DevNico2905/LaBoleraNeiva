@@ -62,19 +62,19 @@ radioButtons.forEach((button) => {
 
     switch (selectedValue) {
         case "2-p":
-          
+            showDivNameDefault()
           break;
         case "3-p":
-          
+            showDivNameThree()
           break;
         case "4-p":
-          
+            showDivNameFour()
           break;
         case "5-p":
-          
+            showDivNameFive()
           break;
         case "6-p":
-          
+            showDivNameSix()
           break;
         default:
           alert("Opción no válida.");
@@ -83,3 +83,37 @@ radioButtons.forEach((button) => {
   });
 });
 
+function showDivNameDefault() {
+    document.getElementById('div-name-three').classList.remove("showDivName");
+    document.getElementById('div-name-four').classList.remove("showDivName");
+    document.getElementById('div-name-five').classList.remove("showDivName");
+    document.getElementById('div-name-six').classList.remove("showDivName");   
+}
+
+function showDivNameThree() {
+    document.getElementById('div-name-three').classList.add("showDivName");
+    document.getElementById('div-name-four').classList.remove("showDivName");
+    document.getElementById('div-name-five').classList.remove("showDivName");
+    document.getElementById('div-name-six').classList.remove("showDivName");   
+}
+
+function showDivNameFour() {
+    document.getElementById('div-name-three').classList.add("showDivName");
+    document.getElementById('div-name-four').classList.add("showDivName");
+    document.getElementById('div-name-five').classList.remove("showDivName");
+    document.getElementById('div-name-six').classList.remove("showDivName");   
+}
+
+function showDivNameFive() {
+    document.getElementById('div-name-three').classList.add("showDivName");
+    document.getElementById('div-name-four').classList.add("showDivName");
+    document.getElementById('div-name-five').classList.add("showDivName");
+    document.getElementById('div-name-six').classList.remove("showDivName");   
+}
+
+function showDivNameSix() {
+    document.getElementById('div-name-three').classList.add("showDivName");
+    document.getElementById('div-name-four').classList.add("showDivName");
+    document.getElementById('div-name-five').classList.add("showDivName");
+    document.getElementById('div-name-six').classList.add("showDivName");   
+}

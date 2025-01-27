@@ -283,4 +283,15 @@ a{
   .input-names:focus {
     border: none; /* Asegura que no aparezca borde al hacer hover o al enfocar */
     outline: none; /* También elimina el borde al enfocar */
-  }
+}
+
+.th-d-n, .fo-d-n, .fi-d-n, .s-d-n {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.showDivName{
+    opacity: 1;
+    pointer-events: all;
+}
