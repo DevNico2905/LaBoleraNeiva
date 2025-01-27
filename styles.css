@@ -127,16 +127,22 @@ a{
 }*/
 
 .selecciona-players{
-    height: 25%;
+    height: 20%;
     background-color: #e5e9ef;
 }
  
 .name-player{
-    height: 65%;
-    background-color: white;
+    height: 70%;
+    background-color: #e5e9ef;
     border-radius: 15px;
     margin-left: 2%;
     margin-right: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-sizing: border-box;
+    padding: 2% 7% 2% 7%;
 }
 
 .botones-modal{
@@ -145,7 +151,6 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5px;
 }
 
 .modal-buttons{
@@ -195,7 +200,6 @@ a{
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    
 }
 
 .NewGameModal.show {
@@ -246,5 +250,13 @@ a{
     justify-content: center;
     align-items: center;
     color: #526581;
-    
+}
+
+.div-name-players{
+    width: 100%;
+    height: 12.5%;
+    background-color: white;
+    border-width: 0.5px;
+    border-radius: 15px;
+    margin: 7.5px 0px 7.5px 0px;
 }

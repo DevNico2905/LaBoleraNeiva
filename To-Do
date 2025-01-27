@@ -1,0 +1,10 @@
+input {
+  border: none; /* Elimina el borde por defecto */
+  outline: none; /* Elimina el borde de enfoque */
+}
+
+input:hover,
+input:focus {
+  border: none; /* Asegura que no aparezca borde al hacer hover o al enfocar */
+  outline: none; /* También elimina el borde al enfocar */
+}
