@@ -43,3 +43,43 @@ function hideNewGameModal() {
         modal.style.display = 'none';
     }, 300);
 }
+
+
+// Seleccionamos todos los botones
+const radioButtons = document.querySelectorAll('.opcion');
+let selectedValue = null; // Variable para guardar la selección actual
+
+radioButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    // Removemos la clase 'selected' de todos los botones
+    radioButtons.forEach((btn) => btn.classList.remove("selected"));
+
+    // Marcamos el botón seleccionado
+    button.classList.add("selected");
+
+    // Guardamos la selección actual
+    selectedValue = button.dataset.value;
+
+    switch (selectedValue) {
+        case "2-p":
+          
+          break;
+        case "3-p":
+          
+          break;
+        case "4-p":
+          
+          break;
+        case "5-p":
+          
+          break;
+        case "6-p":
+          
+          break;
+        default:
+          alert("Opción no válida.");
+          break;
+    }
+  });
+});
+

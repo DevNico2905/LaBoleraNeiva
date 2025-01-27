@@ -237,7 +237,7 @@ a{
     font-family: 'Poppins';
 }
 
-.opcion:hover {
+.opcion.selected {
     background-color: #007aff;
     color: white;
 }
